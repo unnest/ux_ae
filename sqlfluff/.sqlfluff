@@ -1,6 +1,4 @@
 [sqlfluff]
-templater = dbt
-dialect = bigquery
 rules = core
 exclude_rules = L016
 
