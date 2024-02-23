@@ -1,0 +1,20 @@
+[sqlfluff]
+templater = dbt
+dialect = bigquery
+rules = core
+exclude_rules = L016
+
+[sqlfluff:templater:jinja]
+apply_dbt_builtins = True
+
+[sqlfluff:rules]
+allow_scalar = True
+single_table_references = consistent
+unquoted_identifiers_policy = all
+capitalisation_policy = upper
+
+[sqlfluff:layout:type:comma]
+line_position = trailing
+
+[sqlfluff:capitalisation:identifiers]
+extended_capitalisation_policy = upper
