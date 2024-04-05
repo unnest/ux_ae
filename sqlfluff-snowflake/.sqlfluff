@@ -1,5 +1,7 @@
 [sqlfluff]
 rules = core
+templater = dbt
+dialect = snowflake
 exclude_rules = L016
 
 [sqlfluff:templater:jinja]
